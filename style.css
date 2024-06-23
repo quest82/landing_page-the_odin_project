@@ -1,0 +1,211 @@
+:root {
+	--clr-black: #1f2937;
+	--clr-white-200: #f9faf8;
+	--clr-white-100: #e5e7eb;
+	--clr-blue: #3882f6;
+    --clr-grey: rgb(155, 155, 155);
+}
+
+/* CSS Reset */
+
+/*
+  1. Use a more-intuitive box-sizing model.
+  2. Remove default margin
+*/
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+/* Globals */
+
+body {
+	background-color: var(--clr-white-200);
+	font-family: sans-serif;
+	font-size: 14px;
+}
+
+.flex {
+	display: flex;
+}
+
+section,
+header {
+	width: 100%;
+}
+
+.wrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+/* Layout */
+
+.header_flex,
+.intro_flex {
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* --- Nav --- */
+
+.headerContainer {
+	background-color: var(--clr-black);
+	padding: 0.5em 0;
+}
+
+.intro_item {
+	width: 47%;
+}
+
+/* --- Intro Section --- */
+
+.intro_section {
+	background-color: var(--clr-black);
+	padding: 4em 0;
+}
+
+
+/* --- Info Section --- */
+
+.info_section{
+    padding-top: 2em;
+    padding-bottom: 4e;
+}
+
+.display_flex{
+    max-width: 700px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.img{
+    width: 120px;
+    height: 120px;
+    border: 2px solid var(--clr-blue);
+    border-radius: 8px;
+}
+
+/* Typography */
+
+.logo_title,
+.intro_title {
+	color: var(--clr-white-200);
+}
+
+/* --- Nav --- */
+
+.logo_title {
+	color: var(--clr-white-200);
+	font-size: 24px;
+	text-transform: capitalize;
+}
+
+.nav_item {
+	color: var(--clr-white-100);
+	list-style: none;
+	display: inline;
+	margin-left: 1.3em;
+}
+
+/* --- Intro Section --- */
+
+.intro_title {
+	font-size: 40px;
+    font-weight: 900;
+	line-height: 1.1;
+	margin-bottom: 0.3em;
+	width: 400px;
+}
+
+.intro_copy,
+.btn,
+.img_placeholder {
+	color: var(--clr-white-100);
+}
+
+/* --- Info Section --- */
+
+.info_header,
+.display_info{
+    text-align: center;
+}
+
+.display_info{
+	width: 160px;
+	margin-left: -17px;
+	margin-top: 10px;
+}
+
+.info_header{
+    color: var(--clr-black);
+    font-size: 30px;
+    margin-bottom: .5em;
+}
+
+/* Assets */
+
+/* --- Intro Section --- */
+
+.btn{
+    background-color: var(--clr-blue);
+    text-decoration: none;
+    padding: .15em .9em;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: .4em;
+}
+
+.intro_img {
+    background-color: var(--clr-grey);
+    padding: 6.9em 4em;
+    text-align: center;
+}
