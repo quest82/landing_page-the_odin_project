@@ -118,7 +118,7 @@ header {
 
 .info_section{
     padding-top: 2em;
-    padding-bottom: 4e;
+    padding-bottom: 6em;
 }
 
 .display_flex{
@@ -127,11 +127,16 @@ header {
     margin: 0 auto;
 }
 
-.img{
-    width: 120px;
-    height: 120px;
-    border: 2px solid var(--clr-blue);
-    border-radius: 8px;
+
+/* --- Quote Section --- */
+
+.quote_section{
+	background-color: var(--clr-white-100);
+}
+
+.quote_wrapper{
+	max-width: 400px;
+
 }
 
 /* Typography */
@@ -191,6 +196,21 @@ header {
     margin-bottom: .5em;
 }
 
+
+/* --- Quote Section --- */
+
+.quote{
+	font-size: 25px;
+	color: var(--clr-black);
+	font-weight: 200;
+	max-width: 700px;
+}
+
+.quote_sayer{
+	display: block;
+	text-align: right;
+}
+
 /* Assets */
 
 /* --- Intro Section --- */
@@ -208,4 +228,13 @@ header {
     background-color: var(--clr-grey);
     padding: 6.9em 4em;
     text-align: center;
+}
+
+/* --- Info Section --- */
+
+.img{
+    width: 120px;
+    height: 120px;
+    border: 2px solid var(--clr-blue);
+    border-radius: 8px;
 }
