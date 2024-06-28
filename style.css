@@ -132,11 +132,43 @@ header {
 
 .quote_section{
 	background-color: var(--clr-white-100);
+	padding: 5em 0;
 }
 
 .quote_wrapper{
-	max-width: 400px;
+	max-width: 700px;
 
+}
+
+
+/* --- CTA Section --- */
+
+.cta_section{
+	padding: 5em 0;
+}
+
+.cta_wrapper{
+	background-color: var(--clr-blue);
+	color: var(--clr-white-100);
+	padding: 1em 0;
+	border-radius: 4px;
+}
+
+.cta_box{
+	max-width: 700px;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+}
+
+
+/* --- Footer Section --- */
+
+.footerContainer{
+	background-color: var(--clr-black);
+	color: var(--clr-white-200);
+	padding: 1em 0;
+	text-align: center;
 }
 
 /* Typography */
@@ -203,13 +235,17 @@ header {
 	font-size: 25px;
 	color: var(--clr-black);
 	font-weight: 200;
-	max-width: 700px;
+	/* max-width: 900px; */
 }
 
 .quote_sayer{
 	display: block;
 	text-align: right;
 }
+
+/* --- CTA Section --- */
+
+
 
 /* Assets */
 
@@ -237,4 +273,11 @@ header {
     height: 120px;
     border: 2px solid var(--clr-blue);
     border-radius: 8px;
+}
+
+
+/* --- CTA Section --- */
+
+.sign_up_btn{
+	border: 1px solid var(--clr-white-200);
 }
